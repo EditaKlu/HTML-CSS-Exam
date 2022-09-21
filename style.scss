@@ -1,0 +1,101 @@
+$color-dark: #111111;
+$color-grey: #555555;
+$color-light-grey: #999999;
+$color-pink: #FF3998;
+$color-orange: #FF8139;
+$color-white: white;
+$color-red:#FF3939;
+$color-green:#39FFA0;
+$primary-font: 'Inter', sans-serif;
+$logo-font: 'Varela Round', sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $primary-font;
+    padding: 2vh 5vw;
+    .container-logo {
+        display: flex;
+        align-items: center;
+            img {
+                padding-right: 20px;
+            }
+    }
+    ul {
+        display: none;
+        list-style: none;
+        align-items: center;
+        li {
+            padding-right: 20px;
+            text-transform: capitalize;
+        }
+        a {
+            text-decoration: none;
+            color: $color-grey;
+        }     
+        li:last-of-type a {
+            color: $color-pink;
+        }        
+    }
+    .fa-bars {
+        color: $color-light-grey;
+    }
+}
+@media screen and (min-width: 769px) { 
+   header ul {
+       display: flex;   
+   }
+   .hamburger-menu {
+    display: none;
+   }
+}
+main {
+    display: flex;
+    padding: 0 5vw;
+    .main-info {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        font-family: $primary-font;
+        
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            margin: 30px auto;
+        }
+        p:first-of-type {
+            text-transform: uppercase;
+            color: $color-pink;
+            font-weight: 700;
+        }
+        p:last-of-type {
+            color: $color-grey;
+            line-height: 30px;
+            font-size: 20px;
+            padding-bottom: 40px;
+        }
+        button {
+            border-radius: 40px;
+            border: solid 5px transparent;
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            box-shadow: 2px 1000px 1px #fff inset;
+            background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), 
+                            linear-gradient(to right, $color-pink, $color-red, $color-orange, $color-green);
+            background-color:$color-white;
+            padding: 20px 50px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .right-container {
+            position: absolute;
+            
+            
+        }
+}
+}
