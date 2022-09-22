@@ -22,6 +22,7 @@ header {
     .container-logo {
         display: flex;
         align-items: center;
+        font-family: $logo-font;
             img {
                 padding-right: 20px;
             }
@@ -56,13 +57,12 @@ header {
 }
 main {
     display: flex;
-    padding: 0 5vw;
+    flex-direction: column;
     .main-info {
         display: flex;
-        // justify-content: space-between;
         align-items: center;
         font-family: $primary-font;
-        
+        padding: 5vh 5vw;
         h1 {
             font-size: 48px;
             font-weight: 900;
@@ -92,10 +92,70 @@ main {
             font-weight: 600;
             font-size: 20px;
         }
+        .left-container {
+            width: 50vw;
+        }
         .right-container {
             position: absolute;
-            
-            
+            top: 90px;
+            right: -190px;
         }
+        .main-info-graphic {
+            width: 400px;
+            height: auto;
+        }
+}
+    .main-offer {
+        margin-top: 50px;
+        background-image: url(/assets/background.svg);
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-family: $primary-font;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        h4 {
+            font-size: 40px;
+            font-weight: 500;
+            padding-left: 20px;
+            max-width: 300px;
+        }
+        p {
+            padding-left: 20px;
+            padding-bottom: 30px;
+            padding-top: 20px;
+            max-width: 300px;
+        }
+    }
+}
+@media screen and (min-width: 769px) { 
+    main {
+        .main-info{
+            padding: 20vh 5vw;
+            h1 {
+                font-size: 96px;
+            } 
+            .right-container {
+                right: -90px;
+                top: 160px;
+            }
+            .main-info-graphic {
+                width: 700px;
+            }
+        }
+        .main-offer {
+            margin-top: 50px;
+            margin: 0vh 5vw;
+            background-size: 100%;
+            h4, p {
+                padding-left: 60px;
+                max-width: max-content;
+            }
+            p {
+                padding-bottom: 70px;
+            }
+        }    
 }
 }
