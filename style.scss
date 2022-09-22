@@ -14,6 +14,13 @@ h4 {
     font-size: 40px;
     font-weight: 500;
 }
+h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-grey;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
 hr {
     border: 1px solid $color-lighter-grey;
     background-color: $color-lighter-grey;
@@ -49,7 +56,7 @@ header {
         }
         a {
             text-decoration: none;
-            color: $color-grey;
+            color: $color-light-grey;
         }     
         li:last-of-type a {
             color: $color-pink;
@@ -249,8 +256,52 @@ main {
         display: inline;
         margin-top: 0px;
         margin-bottom: 20px;
+    }
+    .bottom-menu {
+        display: flex;
+        flex-direction: column;
+        padding: 5vh 5vw;
+        font-family: $primary-font;
+    }
+    .right-menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-right: 100px;
+        li {
+            list-style-type: none; 
+            a {
+                text-decoration: none;
+                color: $color-grey;
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    .left-menu {
+            li {
+                list-style-type: none; 
+            }
+            p {
+                color: $color-light-grey;
+                padding-top: 20px;
+                font-size: 20px;
+            }  
+    }
+    .social-media-links {
+        padding-top: 20px;
+        display: flex;
+        gap: 15px;
+         a {
+            color: $color-light-grey;
+        }     
     }    
-    }   
+}   
 @media screen and (min-width: 769px) { 
     main {
         .main-info{
@@ -297,6 +348,15 @@ main {
         }
         .divider, .divider-bottom {
             padding: 0 5vw;
+        }
+        .bottom-menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .right-menu {
+            padding-right: 0px;
         }    
 }
 }

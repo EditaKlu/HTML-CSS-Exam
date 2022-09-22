@@ -3,6 +3,14 @@ h4 {
   font-weight: 500;
 }
 
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #555555;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
 hr {
   border: 1px solid #EEEEEE;
   background-color: #EEEEEE;
@@ -42,7 +50,7 @@ header ul li {
 }
 header ul a {
   text-decoration: none;
-  color: #555555;
+  color: #999999;
 }
 header ul li:last-of-type a {
   color: #FF3998;
@@ -242,6 +250,48 @@ main .divider-bottom {
   margin-top: 0px;
   margin-bottom: 20px;
 }
+main .bottom-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 5vw;
+  font-family: "Inter", sans-serif;
+}
+main .right-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-right: 100px;
+}
+main .right-menu li {
+  list-style-type: none;
+}
+main .right-menu li a {
+  text-decoration: none;
+  color: #555555;
+}
+main .right-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .left-menu li {
+  list-style-type: none;
+}
+main .left-menu p {
+  color: #999999;
+  padding-top: 20px;
+  font-size: 20px;
+}
+main .social-media-links {
+  padding-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+main .social-media-links a {
+  color: #999999;
+}
 
 @media screen and (min-width: 769px) {
   main .main-info {
@@ -288,5 +338,14 @@ main .divider-bottom {
   }
   main .divider, main .divider-bottom {
     padding: 0 5vw;
+  }
+  main .bottom-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .right-menu {
+    padding-right: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
