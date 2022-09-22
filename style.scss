@@ -32,6 +32,9 @@ hr {
     padding: 0;
     margin: 0;
 }
+body {
+    overflow-x: hidden;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -251,7 +254,7 @@ main {
         .repeating-left-container {
             padding-bottom: 50px;
         }
-        }
+    }
     .divider-bottom {
         display: inline;
         margin-top: 0px;
@@ -275,6 +278,7 @@ main {
             a {
                 text-decoration: none;
                 color: $color-grey;
+                font-size: 20px;
             }
         }
         ul {
@@ -288,13 +292,13 @@ main {
                 list-style-type: none; 
             }
             p {
-                color: $color-light-grey;
+                color: $color-grey;
                 padding-top: 20px;
                 font-size: 20px;
             }  
     }
     .social-media-links {
-        padding-top: 20px;
+        padding-top: 40px;
         display: flex;
         gap: 15px;
          a {
@@ -359,4 +363,22 @@ main {
             padding-right: 0px;
         }    
 }
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh 5vw;
+    font-family: $primary-font;
+    color: $color-light-grey;
+    font-size: 20px;
+    .right-footer {
+        display: none;
+    }
+}
+@media screen and (min-width: 769px) {
+    footer {
+        .right-footer{
+            display: inline;
+        }
+    }
 }

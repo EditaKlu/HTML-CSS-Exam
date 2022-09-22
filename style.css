@@ -24,6 +24,10 @@ hr {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -270,6 +274,7 @@ main .right-menu li {
 main .right-menu li a {
   text-decoration: none;
   color: #555555;
+  font-size: 20px;
 }
 main .right-menu ul {
   display: flex;
@@ -280,12 +285,12 @@ main .left-menu li {
   list-style-type: none;
 }
 main .left-menu p {
-  color: #999999;
+  color: #555555;
   padding-top: 20px;
   font-size: 20px;
 }
 main .social-media-links {
-  padding-top: 20px;
+  padding-top: 40px;
   display: flex;
   gap: 15px;
 }
@@ -347,5 +352,22 @@ main .social-media-links a {
   }
   main .right-menu {
     padding-right: 0px;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh 5vw;
+  font-family: "Inter", sans-serif;
+  color: #999999;
+  font-size: 20px;
+}
+footer .right-footer {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  footer .right-footer {
+    display: inline;
   }
 }/*# sourceMappingURL=style.css.map */
