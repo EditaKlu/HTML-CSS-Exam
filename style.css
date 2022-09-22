@@ -1,0 +1,373 @@
+h4 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #555555;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+hr {
+  border: 1px solid #EEEEEE;
+  background-color: #EEEEEE;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  padding: 2vh 5vw;
+}
+header .container-logo {
+  display: flex;
+  align-items: center;
+  font-family: "Varela Round", sans-serif;
+}
+header .container-logo img {
+  padding-right: 20px;
+}
+header ul {
+  display: none;
+  list-style: none;
+  align-items: center;
+}
+header ul li {
+  padding-right: 20px;
+  text-transform: capitalize;
+}
+header ul a {
+  text-decoration: none;
+  color: #999999;
+}
+header ul li:last-of-type a {
+  color: #FF3998;
+}
+header .fa-bars {
+  color: #999999;
+}
+
+@media screen and (min-width: 769px) {
+  header ul {
+    display: flex;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+main .main-info, main .main-info-repeating {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  padding: 5vh 5vw;
+}
+main .main-info h1, main .main-info-repeating h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 30px auto;
+}
+main .main-info p:first-of-type, main .main-info-repeating p:first-of-type {
+  text-transform: uppercase;
+  color: #FF3998;
+  font-weight: 700;
+}
+main .main-info p:last-of-type, main .main-info-repeating p:last-of-type {
+  color: #555555;
+  line-height: 30px;
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+main .main-info button, main .main-info-repeating button {
+  border-radius: 40px;
+  border: solid 5px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to right, #FF3998, #FF3939, #FF8139, #39FFA0);
+  background-color: white;
+  padding: 20px 50px;
+  font-weight: 600;
+  font-size: 20px;
+}
+main .main-info .left-container, main .main-info .repeating-left-container, main .main-info-repeating .left-container, main .main-info-repeating .repeating-left-container {
+  width: 50vw;
+}
+main .main-info .right-container, main .main-info-repeating .right-container {
+  position: absolute;
+  top: 90px;
+  right: -190px;
+}
+main .main-info .main-info-graphic, main .main-info-repeating .main-info-graphic {
+  width: 400px;
+  height: auto;
+}
+main .main-offer {
+  margin-top: 50px;
+  background-image: url(/assets/background.svg);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+main .main-offer h4 {
+  padding-left: 20px;
+  max-width: 300px;
+}
+main .main-offer p {
+  line-height: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  max-width: 300px;
+}
+main .advertisement {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 5vh 5vw;
+}
+main .advertisement .boom {
+  max-width: 139px;
+  overflow: hidden;
+}
+main .advertisement .opendoor {
+  display: none;
+}
+main .for-sale-showcase {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  margin-left: 5vw;
+  margin-top: 50px;
+}
+main .for-sale-showcase p, main .for-sale-showcase a {
+  color: #555555;
+  line-height: 20px;
+  max-width: 60vw;
+  padding: 20px 0px 30px 0px;
+}
+main .for-sale-showcase .showcase {
+  display: flex;
+  gap: 30px;
+}
+main .for-sale-showcase .showcase .showcase-item {
+  width: 290px;
+}
+main .for-sale-showcase .showcase-image {
+  background-color: #EEEEEE;
+  border-radius: 20px 20px 0 0;
+}
+main .for-sale-showcase .item-description {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EEEEEE;
+  border-radius: 0px 0px 10px 10px;
+  height: 100px;
+}
+main .for-sale-showcase .item-description p {
+  padding: 0;
+  line-height: normal;
+}
+main .for-sale-showcase .item-description .price-group {
+  display: flex;
+  gap: 10px;
+}
+main .for-sale-showcase .item-description .right-column, main .for-sale-showcase .item-description .left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+main .for-sale-showcase .item-description .right-column {
+  align-items: flex-end;
+}
+main .for-sale-showcase .item-description .series-name {
+  color: #FF8139;
+}
+main .for-sale-showcase .item-description .series-name, main .for-sale-showcase .item-description .bid-class {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+main .for-sale-showcase .item-description .item-name, main .for-sale-showcase .item-description .price {
+  font-size: 18px;
+  color: #111111;
+  font-weight: 500;
+}
+main .for-sale-showcase .item-description .id-number, main .for-sale-showcase .item-description .days-left {
+  font-size: 18px;
+  color: #777777;
+}
+main .for-sale-showcase .item-description .bid-class {
+  color: #777777;
+}
+main .divider {
+  display: inline;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+main .main-info-repeating {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20vw;
+  align-items: flex-end;
+  padding-bottom: 0px;
+}
+main .main-info-repeating .repeating-right-container {
+  display: flex;
+}
+main .main-info-repeating .repeating-main-info-graphic {
+  width: 150px;
+  height: auto;
+}
+main .main-info-repeating .repeating-left-container {
+  padding-bottom: 50px;
+}
+main .divider-bottom {
+  display: inline;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+main .bottom-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 5vw;
+  font-family: "Inter", sans-serif;
+}
+main .right-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-right: 100px;
+}
+main .right-menu li {
+  list-style-type: none;
+}
+main .right-menu li a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 20px;
+}
+main .right-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .left-menu li {
+  list-style-type: none;
+}
+main .left-menu p {
+  color: #555555;
+  padding-top: 20px;
+  font-size: 20px;
+}
+main .social-media-links {
+  padding-top: 40px;
+  display: flex;
+  gap: 15px;
+}
+main .social-media-links a {
+  color: #999999;
+}
+
+@media screen and (min-width: 769px) {
+  main .main-info {
+    padding: 20vh 5vw;
+  }
+  main .main-info h1 {
+    font-size: 96px;
+  }
+  main .main-info .right-container {
+    right: -90px;
+    top: 160px;
+  }
+  main .main-info .main-info-graphic {
+    width: 700px;
+  }
+  main .main-offer {
+    margin-top: 50px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: auto;
+    height: 300px;
+  }
+  main .main-offer h4, main .main-offer p {
+    padding-left: 60px;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  main .main-offer p {
+    padding-bottom: 70px;
+    line-height: normal;
+  }
+  main .advertisement .boom {
+    max-width: 100%;
+  }
+  main .advertisement .opendoor {
+    display: contents;
+  }
+  main .for-sale-showcase {
+    margin-top: 80px;
+  }
+  main .divider, main .divider-bottom {
+    padding: 0 5vw;
+  }
+  main .bottom-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .right-menu {
+    padding-right: 0px;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh 5vw;
+  font-family: "Inter", sans-serif;
+  color: #999999;
+  font-size: 20px;
+}
+footer .right-footer {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  footer .right-footer {
+    display: inline;
+  }
+}/*# sourceMappingURL=style.css.map */
