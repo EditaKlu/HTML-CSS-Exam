@@ -13,6 +13,7 @@ header {
 header .container-logo {
   display: flex;
   align-items: center;
+  font-family: "Varela Round", sans-serif;
 }
 header .container-logo img {
   padding-right: 20px;
@@ -47,12 +48,13 @@ header .fa-bars {
 }
 main {
   display: flex;
-  padding: 0 5vw;
+  flex-direction: column;
 }
 main .main-info {
   display: flex;
   align-items: center;
   font-family: "Inter", sans-serif;
+  padding: 5vh 5vw;
 }
 main .main-info h1 {
   font-size: 48px;
@@ -82,6 +84,69 @@ main .main-info button {
   font-weight: 600;
   font-size: 20px;
 }
+main .main-info .left-container {
+  width: 50vw;
+}
 main .main-info .right-container {
   position: absolute;
+  top: 90px;
+  right: -190px;
+}
+main .main-info .main-info-graphic {
+  width: 400px;
+  height: auto;
+}
+main .main-offer {
+  margin-top: 50px;
+  background-image: url(/assets/background.svg);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+main .main-offer h4 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-left: 20px;
+  max-width: 300px;
+}
+main .main-offer p {
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  max-width: 300px;
+}
+
+@media screen and (min-width: 769px) {
+  main .main-info {
+    padding: 20vh 5vw;
+  }
+  main .main-info h1 {
+    font-size: 96px;
+  }
+  main .main-info .right-container {
+    right: -90px;
+    top: 160px;
+  }
+  main .main-info .main-info-graphic {
+    width: 700px;
+  }
+  main .main-offer {
+    margin-top: 50px;
+    margin: 0vh 5vw;
+    background-size: 100%;
+  }
+  main .main-offer h4, main .main-offer p {
+    padding-left: 60px;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  main .main-offer p {
+    padding-bottom: 70px;
+  }
 }/*# sourceMappingURL=style.css.map */
