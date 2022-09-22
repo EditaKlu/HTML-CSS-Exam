@@ -1,3 +1,16 @@
+h4 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+hr {
+  border: 1px solid #EEEEEE;
+  background-color: #EEEEEE;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -50,29 +63,29 @@ main {
   display: flex;
   flex-direction: column;
 }
-main .main-info {
+main .main-info, main .main-info-repeating {
   display: flex;
   align-items: center;
   font-family: "Inter", sans-serif;
   padding: 5vh 5vw;
 }
-main .main-info h1 {
+main .main-info h1, main .main-info-repeating h1 {
   font-size: 48px;
   font-weight: 900;
   margin: 30px auto;
 }
-main .main-info p:first-of-type {
+main .main-info p:first-of-type, main .main-info-repeating p:first-of-type {
   text-transform: uppercase;
   color: #FF3998;
   font-weight: 700;
 }
-main .main-info p:last-of-type {
+main .main-info p:last-of-type, main .main-info-repeating p:last-of-type {
   color: #555555;
   line-height: 30px;
   font-size: 20px;
   padding-bottom: 40px;
 }
-main .main-info button {
+main .main-info button, main .main-info-repeating button {
   border-radius: 40px;
   border: solid 5px transparent;
   background-origin: border-box;
@@ -84,15 +97,15 @@ main .main-info button {
   font-weight: 600;
   font-size: 20px;
 }
-main .main-info .left-container {
+main .main-info .left-container, main .main-info .repeating-left-container, main .main-info-repeating .left-container, main .main-info-repeating .repeating-left-container {
   width: 50vw;
 }
-main .main-info .right-container {
+main .main-info .right-container, main .main-info-repeating .right-container {
   position: absolute;
   top: 90px;
   right: -190px;
 }
-main .main-info .main-info-graphic {
+main .main-info .main-info-graphic, main .main-info-repeating .main-info-graphic {
   width: 400px;
   height: auto;
 }
@@ -109,16 +122,125 @@ main .main-offer {
   justify-content: end;
 }
 main .main-offer h4 {
-  font-size: 40px;
-  font-weight: 500;
   padding-left: 20px;
   max-width: 300px;
 }
 main .main-offer p {
+  line-height: 20px;
   padding-left: 20px;
   padding-bottom: 30px;
   padding-top: 20px;
   max-width: 300px;
+}
+main .advertisement {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 5vh 5vw;
+}
+main .advertisement .boom {
+  max-width: 139px;
+  overflow: hidden;
+}
+main .advertisement .opendoor {
+  display: none;
+}
+main .for-sale-showcase {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  margin-left: 5vw;
+  margin-top: 50px;
+}
+main .for-sale-showcase p, main .for-sale-showcase a {
+  color: #555555;
+  line-height: 20px;
+  max-width: 60vw;
+  padding: 20px 0px 30px 0px;
+}
+main .for-sale-showcase .showcase {
+  display: flex;
+  gap: 30px;
+}
+main .for-sale-showcase .showcase .showcase-item {
+  width: 290px;
+}
+main .for-sale-showcase .showcase-image {
+  background-color: #EEEEEE;
+  border-radius: 20px 20px 0 0;
+}
+main .for-sale-showcase .item-description {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EEEEEE;
+  border-radius: 0px 0px 10px 10px;
+  height: 100px;
+}
+main .for-sale-showcase .item-description p {
+  padding: 0;
+  line-height: normal;
+}
+main .for-sale-showcase .item-description .price-group {
+  display: flex;
+  gap: 10px;
+}
+main .for-sale-showcase .item-description .right-column, main .for-sale-showcase .item-description .left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+main .for-sale-showcase .item-description .right-column {
+  align-items: flex-end;
+}
+main .for-sale-showcase .item-description .series-name {
+  color: #FF8139;
+}
+main .for-sale-showcase .item-description .series-name, main .for-sale-showcase .item-description .bid-class {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+main .for-sale-showcase .item-description .item-name, main .for-sale-showcase .item-description .price {
+  font-size: 18px;
+  color: #111111;
+  font-weight: 500;
+}
+main .for-sale-showcase .item-description .id-number, main .for-sale-showcase .item-description .days-left {
+  font-size: 18px;
+  color: #777777;
+}
+main .for-sale-showcase .item-description .bid-class {
+  color: #777777;
+}
+main .divider {
+  display: inline;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+main .main-info-repeating {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20vw;
+  align-items: flex-end;
+  padding-bottom: 0px;
+}
+main .main-info-repeating .repeating-right-container {
+  display: flex;
+}
+main .main-info-repeating .repeating-main-info-graphic {
+  width: 150px;
+  height: auto;
+}
+main .main-info-repeating .repeating-left-container {
+  padding-bottom: 50px;
+}
+main .divider-bottom {
+  display: inline;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 769px) {
@@ -137,8 +259,13 @@ main .main-offer p {
   }
   main .main-offer {
     margin-top: 50px;
-    margin: 0vh 5vw;
-    background-size: 100%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: auto;
+    height: 300px;
   }
   main .main-offer h4, main .main-offer p {
     padding-left: 60px;
@@ -148,5 +275,18 @@ main .main-offer p {
   }
   main .main-offer p {
     padding-bottom: 70px;
+    line-height: normal;
+  }
+  main .advertisement .boom {
+    max-width: 100%;
+  }
+  main .advertisement .opendoor {
+    display: contents;
+  }
+  main .for-sale-showcase {
+    margin-top: 80px;
+  }
+  main .divider, main .divider-bottom {
+    padding: 0 5vw;
   }
 }/*# sourceMappingURL=style.css.map */
